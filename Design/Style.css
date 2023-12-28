@@ -9,13 +9,42 @@
     margin-left: -100px;
     margin-top: -100px;
     position: absolute;
+    animation-name: sunRise;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
 
 }
 
-body {
-    background-color: black;
-}
 
 h1 {
     color: brown;
+}
+
+body {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    animation-name: example;
+    animation-duration: 15s;
+    animation-iteration-count: 1;
+}
+
+@keyframes example {
+    from {
+        background-color: black;
+    }
+
+    to {
+        background-color: white;
+    }
+}
+
+@keyframes sunRise {
+    from {
+        top: 0px;
+    }
+
+    to {
+        top: 200px;
+    }
 }
